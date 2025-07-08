@@ -8,7 +8,8 @@ WORKDIR /app
 COPY . /app
 
 # Build the Spring Boot app (skip tests to speed it up)
-RUN ./mvnw clean package -DskipTests
+RUN mvn clean package -DskipTests
+
 
 # Run the JAR (replace name if different)
 CMD ["java", "-jar", "target/calculator-0.0.1-SNAPSHOT.jar"]
