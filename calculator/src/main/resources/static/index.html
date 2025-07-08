@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Calculator</h1>
+
+<!-- Input Fields -->
+<input type="number" id="a" placeholder="Enter first number">
+<input type="number" id="b" placeholder="Enter second number">
+<br>
+
+<!-- Operation Buttons -->
+<button onclick="calculate('add')">Add</button>
+<button onclick="calculate('subtract')">Subtract</button>
+<button onclick="calculate('multiply')">Multiply</button>
+<button onclick="calculate('divide')">Divide</button>
+
+<!-- Result & History Display -->
+<div id="result">Result: -</div>
+<div id="history"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
